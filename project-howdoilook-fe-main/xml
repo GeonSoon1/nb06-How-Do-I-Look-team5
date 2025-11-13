@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>큐레이팅</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="modal">
+        <div class="modal-header">
+            <h2>큐레이팅</h2>
+            <button class="close-btn">×</button>
+        </div>
+        
+        <div class="modal-body">
+            <!-- 트렌디 슬라이더 -->
+            <div class="slider-group">
+                <label>트렌디</label>
+                <div class="slider-container">
+                    <input type="range" min="0" max="10" value="8" 
+                           class="slider" id="trendy">
+                    <span class="slider-value" id="trendy-value">8</span>
+                </div>
+            </div>
+
+            <!-- 개성 슬라이더 -->
+            <div class="slider-group">
+                <label>개성</label>
+                <div class="slider-container">
+                    <input type="range" min="0" max="10" value="9" 
+                           class="slider" id="personality">
+                    <span class="slider-value" id="personality-value">9</span>
+                </div>
+            </div>
+
+            <!-- 실용성 슬라이더 -->
+            <div class="slider-group">
+                <label>실용성</label>
+                <div class="slider-container">
+                    <input type="range" min="0" max="10" value="3" 
+                           class="slider" id="practicality">
+                    <span class="slider-value" id="practicality-value">3</span>
+                </div>
+            </div>
+
+            <!-- 가성비 슬라이더 -->
+            <div class="slider-group">
+                <label>가성비</label>
+                <div class="slider-container">
+                    <input type="range" min="0" max="10" value="9" 
+                           class="slider" id="valueForMoney">
+                    <span class="slider-value" id="valueForMoney-value">9</span>
+                </div>
+            </div>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>큐레이팅</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="modal">
+        <div class="modal-header">
+            <h2>큐레이팅</h2>
+            <button class="close-btn">×</button>
+        </div>
+        
+        <div class="modal-body">
+            <!-- 슬라이더들 (이전 단계에서 만든 것) -->
+            <div class="slider-group">
+                <label>트렌디</label>
+                <div class="slider-container">
+                    <input type="range" min="0" max="10" value="8" 
+                           class="slider" id="trendy">
+                    <span class="slider-value" id="trendy-value">8</span>
+                </div>
+            </div>
+
+            <div class="slider-group">
+                <label>개성</label>
+                <div class="slider-container">
+                    <input type="range" min="0" max="10" value="9" 
+                           class="slider" id="personality">
+                    <span class="slider-value" id="personality-value">9</span>
+                </div>
+            </div>
+
+            <div class="slider-group">
+                <label>실용성</label>
+                <div class="slider-container">
+                    <input type="range" min="0" max="10" value="3" 
+                           class="slider" id="practicality">
+                    <span class="slider-value" id="practicality-value">3</span>
+                </div>
+            </div>
+
+            <div class="slider-group">
+                <label>가성비</label>
+                <div class="slider-container">
+                    <input type="range" min="0" max="10" value="9" 
+                           class="slider" id="valueForMoney">
+                    <span class="slider-value" id="valueForMoney-value">9</span>
+                </div>
+            </div>
+
+            <!-- ✨ 새로 추가: 한 줄 큐레이팅 -->
+            <div class="input-group">
+                <label for="comment">한 줄 큐레이팅</label>
+                <textarea 
+                    id="comment" 
+                    placeholder="큐레이팅 내용을 작성해 주세요"
+                    rows="4"
+                ></textarea>
+            </div>
+
+            <!-- ✨ 새로 추가: 닉네임 -->
+            <div class="input-group">
+                <label for="nickname">닉네임</label>
+                <input 
+                    type="text" 
+                    id="nickname" 
+                    placeholder="닉네임을 입력해 주세요"
+                >
+            </div>
+
+            <!-- ✨ 새로 추가: 비밀번호 -->
+            <div class="input-group">
+                <label for="password">비밀번호 입력</label>
+                <input 
+                    type="password" 
+                    id="password" 
+                    placeholder="비밀번호를 입력해 주세요"
+                >
+            </div>
+
+            <!-- ✨ 새로 추가: 제출 버튼 -->
+            <button class="submit-btn" id="submitBtn">
+                큐레이팅 참여하기
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
