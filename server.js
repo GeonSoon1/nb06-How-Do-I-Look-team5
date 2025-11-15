@@ -107,7 +107,7 @@ app.get('/api/curations/:id', (req, res) => {
 });
 
 // 큐레이팅 삭제 (DELETE)
-app.delete('/api/curations/:id', async (req, res) => {
+app.delete('/api/=/:id', async (req, res) => {
     try {
         const id = parseInt(req.params.id);
         const { password } = req.body;
